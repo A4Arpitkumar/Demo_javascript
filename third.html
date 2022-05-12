@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+
+	<script type="text/javascript">
+		
+		function ar()
+		{
+			// document.getElementById('a1').innerHTML = "Hello very beautifull day";
+
+			var a = document.getElementsByClassName('a1');
+
+			for (var i = 0; i < a.length; i++) 
+			{
+				a[i].innerHTML = "Hello very beautifull day";
+				a[i].style.color="red";
+				
+				
+
+			}
+
+
+		}
+
+		function a2()
+		{
+				document.getElementsByClassName('a1')[0].innerHTML = "Hello very beautifull day";
+				document.getElementsByClassName('a1')[3].style.backgroundColor="pink";	
+				document.getElementsByClassName('a1')[5].style.backgroundColor="pink";	
+
+				document.getElementsByClassName('a1')[5].style.fontWeight="bolder";
+				document.getElementsByClassName('a1')[3].style.fontWeight="bolder";
+
+		}
+
+
+
+
+	</script>
+
+	<!-- <style type="text/css">
+		body
+		{
+			: bolder;
+		}
+	</style> -->
+</head>
+<body>
+
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+	<div class="a1">hello world</div>
+
+
+
+	<input type="button" name="" value="click here" onclick="ar();">
+	<input type="button" name="" value="click here" onclick="a2();">
+
+
+</body>
+</html>

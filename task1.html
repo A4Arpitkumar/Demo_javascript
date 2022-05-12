@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task 1</title>
+
+	<script type="text/javascript">
+
+		var c=0;
+		function pl(s)
+		{
+			if(s == '+')
+			{
+				c++;
+			}
+			document.getElementById('count').value=c;
+
+
+			if(s == '-' && c>0)
+			{
+				c--;
+				document.getElementById('count').value=c;
+			}
+
+
+
+
+		}
+
+	
+
+	</script>
+
+</head>
+<body>
+
+	<div>
+
+	<input type="text" name="" id="count" value="0">
+
+	
+
+	<input type="button" name="" value="+" onclick="pl('+')">
+	<input type="button" name="" value="-" onclick="pl('-')">
+
+	</div>
+
+</body>
+</html>
